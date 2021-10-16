@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-image: url("../img/pattern-background-desktop.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: hsla(225, 100%, 94%, 0.8);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  gap: 5px;
+  box-shadow: 5px 5px 10px rgba(221, 221, 221, 0.4);
+}
+
+img[alt="card background"] {
+  border-radius: 10px 10px 0 0;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 900;
+  margin-top: 20px;
+  color: #203150;
+}
+
+p {
+  font-size: 0.9rem;
+  padding: 15px;
+  margin: 0 20px;
+  text-align: center;
+  color: #888b9e;
+  line-height: 1.6;
+}
+
+.pay {
+  margin: 0 0 20px 50px;
+  padding: 10px;
+  width: 300px;
+  height: 90px;
+  background: #eef0fc9c;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pay span {
+  margin-right: 50px;
+  color: #888b9e;
+  font-size: smaller;
+  line-height: 1.6;
+}
+
+.pay span b {
+  color: #203150;
+}
+
+.pay button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+
+.pay button:hover {
+  color: turquoise;
+  text-decoration: underline;
+}
+
+.btn button:first-child {
+  background: hsl(245, 75%, 52%);
+  color: #fff;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  margin: 0 0 20px 50px;
+  box-shadow: 0 10px 10px hsl(224, 30%, 82%);
+}
+
+.btn button:first-child:hover {
+  opacity: 0.8;
+}
+
+.btn button:last-child {
+  background: transparent;
+  color: hsl(224, 23%, 55%);
+  width: 300px;
+  height: 35px;
+  border: none;
+  margin-left: 50px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn button:last-child:hover {
+  color: #203150;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 330px;
+    height: 530px;
+  }
+
+  .pay {
+    margin: 0 0 20px 27px;
+    width: 275px;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .btn button:first-child,
+  .btn button:last-child {
+    margin: 0 0 20px 27px;
+    width: 275px;
+  }
+
+  body {
+    background-image: url("../img/pattern-background-mobile.svg");
+  }
+}
