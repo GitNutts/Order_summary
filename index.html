@@ -9,12 +9,15 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Order Summary</title>
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/png" />
+    <title>Order Summary</title>
   </head>
   <body>
     <main class="card">
-      <img src="img/illustration-hero.svg" alt="card background" />
+      <h1 class="sr-only">
+        This page shows an order summary for an annual music subscription.
+      </h1>
+      <img src="img/illustration-hero.svg" alt="person" aria-hidden="true" />
       <h2>Order Summary</h2>
       <p>
         You can now listen to millions of songs, audiobooks, and podcasts on any
@@ -22,8 +25,11 @@
       </p>
 
       <div class="pay">
-        <img src="img/icon-music.svg" alt="music symbol" aria-hidden="true" />
-        <span><b>Annual Plan</b><br />£59.99/year</span>
+        <img src="img/icon-music.svg" alt="music" aria-hidden="true" />
+        <div>
+          <h3>Annual Plan</h3>
+          <p>£59.99/year</p>
+        </div>
         <button>Change</button>
       </div>
 

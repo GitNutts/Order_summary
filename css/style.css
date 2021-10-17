@@ -10,6 +10,21 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: hsla(225, 100%, 94%, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
 }
 
 main {
@@ -19,15 +34,11 @@ main {
   width: 400px;
   height: 600px;
   border-radius: 10px;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   gap: 5px;
   box-shadow: 5px 5px 10px rgba(221, 221, 221, 0.4);
 }
 
-img[alt="card background"] {
+img[alt="person"] {
   border-radius: 10px 10px 0 0;
 }
 
@@ -38,7 +49,7 @@ h2 {
   color: #203150;
 }
 
-p {
+.card p {
   font-size: 0.9rem;
   padding: 15px;
   margin: 0 20px;
@@ -59,15 +70,23 @@ p {
   align-items: center;
 }
 
-.pay span {
-  margin-right: 50px;
-  color: #888b9e;
-  font-size: smaller;
-  line-height: 1.6;
+.pay div {
+  text-align: center;
+  position: relative;
+  right: 20px;
 }
 
-.pay span b {
+.pay h3 {
   color: #203150;
+  font-weight: 900;
+  font-size: small;
+  padding: 0;
+}
+
+.pay p {
+  color: #888b9e;
+  font-size: small;
+  padding: 0;
 }
 
 .pay button {
@@ -129,7 +148,7 @@ p {
     width: 275px;
   }
 
-  p {
+  .card p {
     font-size: 0.8rem;
   }
 
